@@ -6,9 +6,9 @@ services:
     image: nginx:latest
     container_name: nginx
     volumes:
-        - $PWD/nginx/default.conf:/etc/nginx/conf.d/default.conf
-        - $PWD/certs/localhost.crt:/root/ssl/localhost.crt
-        - $PWD/certs/localhost.key:/root/ssl/localhost.key
+        - C:\Users\bogda\OneDrive\Documente\GitHub\keycloak-workshop-stepup-mfa-biometrics\nginx\default.conf
+        - C:\Users\bogda\OneDrive\Documente\GitHub\keycloak-workshop-stepup-mfa-biometrics\certs\localhost.csr
+        - C:\Users\bogda\OneDrive\Documente\GitHub\keycloak-workshop-stepup-mfa-biometrics\certs\localhost.key
     ports:
         - "80:80"
         - "443:443"
